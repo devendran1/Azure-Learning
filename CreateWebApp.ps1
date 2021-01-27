@@ -5,7 +5,7 @@ $location ='eastus'
 
 # Create a resource group
 
-New-AzResourceGroup -Name $rgname -Loacation $location
+New-AzResourceGroup -Name $rgname -Location $location
 
 # Create an App Service plan in F1 tier
 New-AzAppServicePlan -Name $webappname -Location $location  -ResourceGroupName $regname -Tier F1
